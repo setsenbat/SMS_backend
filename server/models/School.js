@@ -6,7 +6,13 @@ const SchoolSchema = new mongoose.Schema({
   name: {
     type: String,
     index: true,
-  }
+  },
+  codeId: String,
+  units: [],
+  teachers: [],
+  programs: [],
+  classes: [],
+  students: [],
 });
 SchoolSchema.plugin(timestamp);
 SchoolSchema.plugin(uniqueValidator);

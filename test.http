@@ -1,1 +1,34 @@
-GET http://localhost:5557/scrapeweb
+# POST http://localhost:5557/createinvoice
+# Content-Type: application/json
+
+GET https://citi.edu.mn/payments?payment_id=1686715984011
+
+# POST http://localhost:5557/createinvoice
+# Content-Type: application/json
+
+# {
+#     "firstName": "Setsen",
+#     "registration": "ХЛ77102910",
+#     "middleName": "Batmunkh",
+#     "phone1": "99114366",
+#     "amount": 12000,
+#     "applicantId": "setsenwn@gmail.com"
+# }
+
+# POST https://merchant.qpay.mn/v2/auth/token
+# Authorization: Basic Q0lUWV9VTklWRVJfRUNPTTo4ams3RTk2YQ==
+# Content-Type: application/json
+
+# {
+#     "data": "raw"
+# }
+
+# POST http://localhost:7071/api/createApllicant?name=1John&surname=Smith
+# Content-Type: application/json
+
+# {
+#     "name": "Setsen",
+#     "surname": "Batmunkh"
+# }
+
+# GET http://localhost:5557/scrapeweb
