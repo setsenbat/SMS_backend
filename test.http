@@ -1,7 +1,7 @@
 # POST http://localhost:5557/createinvoice
 # Content-Type: application/json
 
-GET https://citi.edu.mn/payments?payment_id=1686715984011
+# GET https://citi.edu.mn/payments?payment_id=1686715984011
 
 # POST http://localhost:5557/createinvoice
 # Content-Type: application/json
@@ -23,12 +23,11 @@ GET https://citi.edu.mn/payments?payment_id=1686715984011
 #     "data": "raw"
 # }
 
-# POST http://localhost:7071/api/createApllicant?name=1John&surname=Smith
+GET http://localhost:5557/getapplicants
+
+# POST http://localhost:5557/getusertasks
 # Content-Type: application/json
 
 # {
-#     "name": "Setsen",
-#     "surname": "Batmunkh"
+#     "username": "setsen.batmunkh@citi.edu.mn"
 # }
-
-# GET http://localhost:5557/scrapeweb

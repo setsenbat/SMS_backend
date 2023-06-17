@@ -36,6 +36,7 @@ app.use((req, res, next) => {
 //Routes
 app.use("/", require("./routes/api/users"));
 app.use("/", require("./routes/api/qpay"));
+app.use("/", require("./routes/api/msal"));
 app.disable("etag");
 
 var connectionParameter = "mongodb://localhost:27017/sms";

@@ -120,7 +120,7 @@ router.post("/checkPaymentStatus", async (req, res, next) => {
   try {
     let payment = await Payment.findOne({ _id: payment_id.mongoId });
 
-    if (!payment.result) {
+    if (payment && !payment.result) {
       try {
         let result = await checkAgainPaymentStatus(
           token,
